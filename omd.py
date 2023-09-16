@@ -65,12 +65,14 @@ def step3_came_back():
         c = random.randint(1, 11)
 
     print('Утка ззабыла пароль от домофона, помогите ей войти в подъезд')
-    print(f'Чтобы ввойти в подъезд нужно ввести решения уравнения: {a}x^2 + {b}x + {c} = 0 (2 знака после запятой)')
+    print(f'Чтобы ввойти в подъезд нужно ввести решения уравнения: '
+          f'{a}x^2 + {b}x + {c} = 0 (2 знака после запятой)')
 
     x_1, x_2 = get_quadratic_equation_roots(a, b, c)
     a, b = [float(x) for x in input().split()]
 
-    while round(max(x_1, x_2), 2) != max(a, b) or round(min(x_1, x_2), 2) != min(a, b):
+    while (round(max(x_1, x_2), 2) != max(a, b)
+           or round(min(x_1, x_2), 2) != min(a, b)):
         print('Попробуйте еще раз')
         a, b = [float(x) for x in input().split()]
 
@@ -79,7 +81,8 @@ def step3_came_back():
 
 
 def get_quadratic_equation_roots(a, b, c):
-    return (-b - math.sqrt(b**2 - 4 * a * c)) / (2 * a), (-b + math.sqrt(b**2 - 4 * a * c)) / (2 * a)
+    return ((-b - math.sqrt(b**2 - 4 * a * c)) / (2 * a),
+            (-b + math.sqrt(b**2 - 4 * a * c)) / (2 * a))
 
 
 if __name__ == '__main__':
