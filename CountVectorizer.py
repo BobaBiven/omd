@@ -14,7 +14,7 @@ class CountVectorizer:
                     self.__features[word] += 1
                 else:
                     self.__features[word] = 1
-            self.__count_matrix.append([v for v in self.__features.values])
+            self.__count_matrix.append([v for v in self.__features.values()])
 
         n = len(self.__count_matrix[-1])
         for element in self.__count_matrix:
