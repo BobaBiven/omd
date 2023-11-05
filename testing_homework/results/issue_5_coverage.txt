@@ -1,0 +1,10 @@
+....                                                                     [100%]
+
+---------- coverage: platform linux, python 3.11.5-final-0 -----------
+Name                  Stmts   Miss  Cover
+-----------------------------------------
+what_is_year_now.py      19      0   100%
+-----------------------------------------
+TOTAL                    19      0   100%
+
+4 passed in 1.70s
