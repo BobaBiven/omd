@@ -1,0 +1,13 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.5, pytest-7.4.3, pluggy-1.3.0 -- /home/askar/AAA/Python/ДЗ/omd/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /home/askar/AAA/Python/ДЗ/omd/testing_homework
+plugins: cov-4.1.0
+collecting ... collected 4 items
+
+issue_5.py::test_yymmdd PASSED
+issue_5.py::test_ddmmyy PASSED
+issue_5.py::test_type_exception PASSED
+issue_5.py::test_value_exception PASSED
+
+============================== 4 passed in 1.65s ===============================
